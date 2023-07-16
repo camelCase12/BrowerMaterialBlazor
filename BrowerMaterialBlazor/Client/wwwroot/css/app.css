@@ -91,6 +91,8 @@ a, .btn-link {
     --md-sys-color-on-surface: #191C1C;
     --md-sys-color-surface-variant: #DAE5E4;
     --md-sys-color-on-surface-variant: #3F4948;
+    --md-sys-color-surface-container-highest: #FFFFFF;
+    --md-sys-color-surface-container-low: #FFFFFF;
     --md-sys-color-inverse-surface: #2D3131;
     --md-sys-color-inverse-on-surface: #EFF1F0;
     --md-sys-color-inverse-primary: #4CDADA;
