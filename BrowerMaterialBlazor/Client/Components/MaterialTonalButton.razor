@@ -1,0 +1,23 @@
+﻿<!--Samuel Chase Brower 2023-->
+
+@namespace BrowerMaterialBlazor.Components
+
+<md-tonal-button class=@Classes style=@Style>@Content</md-tonal-button>
+
+@code {
+    /// <summary>
+    /// Optional css classes to apply to element
+    /// </summary>
+    [Parameter]
+    public string Classes { get; set; } = string.Empty;
+    /// <summary>
+    /// Optional css style to apply to element
+    /// </summary>
+    [Parameter]
+    public string Style { get; set; } = string.Empty;
+    /// <summary>
+    /// Optional content to apply to element
+    /// </summary>
+    [Parameter]
+    public string Content { get; set; } = string.Empty;
+}

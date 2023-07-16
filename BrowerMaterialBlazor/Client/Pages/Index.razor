@@ -1,0 +1,178 @@
+﻿@using BrowerMaterialBlazor.Components;
+
+@page "/"
+
+<div name="row-1" class="d-flex m-1">
+    <md-outlined-button class="m-1">Outlined Button</md-outlined-button>
+    <MaterialTonalButton
+        Classes="m-1"
+        Content="Tonal Button"></MaterialTonalButton>
+    <md-filled-button class="m-1">Filled Button</md-filled-button>
+    <md-elevated-button class="m-1">Elevated</md-elevated-button>
+    <md-text-button class="m-1">Text</md-text-button>
+</div>
+
+<div name="row-2" class="d-flex m-1">
+    <md-tonal-button class="m-1">
+      Send
+      <svg slot="icon" viewBox="0 0 48 48"><path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z"/></svg>
+    </md-tonal-button>
+
+    <md-text-button trailingicon class="m-1">
+      Open
+      <svg slot="icon" viewBox="0 0 48 48"><path d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z"/></svg>
+    </md-text-button>
+</div>
+
+<div name="row-3" class="d-flex m-1">
+    <md-checkbox class="m-1"></md-checkbox>
+    <md-checkbox checked class="m-1"></md-checkbox>
+    <md-checkbox indeterminate class="m-1"></md-checkbox>
+</div>
+
+<div name="row-4" class="d-flex m-1">
+    <md-circular-progress four-color indeterminate></md-circular-progress>
+    <md-circular-progress progress="@progress" aria-label="Page refresh progress"></md-circular-progress>
+    <md-tonal-button class="m-1" @onclick=@(() => progress+=0.1f)>Add Progress</md-tonal-button>
+</div>
+
+<div name="row-5" class="d-flex m-2">
+    <section class="mx-3">
+        <p m-1>Above Divider</p>
+      <md-divider></md-divider>
+        <p m-1>Below Divider</p>
+    </section>
+    <section class="mx-3">
+        <p m-1>Above Inset Divider</p>
+      <md-divider inset></md-divider>
+        <p m-1>Below Inset Divider</p>
+    </section>
+</div>
+
+<div name="row-6" class="d-flex m-1">
+    <style>
+        .surface-0 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 0;
+        }
+        .surface-1 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 1;
+        }
+        .surface-2 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 2;
+        }
+        .surface-3 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 3;
+        }
+        .surface-4 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 4;
+        }
+
+        .surface-5 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 5;
+        }
+
+        .surface-transition {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            transition-duration: 250ms;
+            transition-timing-function: ease-in-out;
+            --md-elevation-level: 3;
+        }
+
+            .surface-transition:active {
+                --md-elevation-level: 0;
+            }
+
+        .surface-colored {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+            --md-elevation-level: 5;
+            --md-sys-color-shadow: #006A6A;
+        }
+    </style>
+    <div class="surface-0 m-2">
+        <md-elevation></md-elevation>
+    </div>
+    <div class="surface-1 m-2">
+        <md-elevation></md-elevation>
+    </div>
+    <div class="surface-2 m-2">
+        <md-elevation></md-elevation>
+    </div>
+    <div class="surface-3 m-2">
+        <md-elevation></md-elevation>
+    </div>
+    <div class="surface-4 m-2">
+        <md-elevation></md-elevation>
+    </div>
+    <div class="surface-5 m-2">
+        <md-elevation></md-elevation>
+    </div>
+    <div class="m-2"></div>
+    <div class="surface-transition m-2">
+        <md-elevation></md-elevation>
+        <p class="mt-2" style="cursor: default; width: 100%; height: 100%; text-align: center;">Press me</p>
+    </div>
+    <div class="surface-colored m-2">
+        <md-elevation></md-elevation>
+    </div>
+</div>
+
+<div name="row-7" class="d-flex m-1">
+    <md-slider></md-slider>
+</div>
+
+<div name="row-8" class="d-flex m-1">
+    <md-filled-field class="m-2" style="width: 200px;">
+        <md-checkbox class="m-1"></md-checkbox>
+        <md-checkbox checked class="m-1"></md-checkbox>
+        <md-checkbox indeterminate class="m-1"></md-checkbox>
+    </md-filled-field>
+    <md-outlined-field class="m-2" style="width: 200px;">
+        <md-checkbox class="m-1"></md-checkbox>
+        <md-checkbox checked class="m-1"></md-checkbox>
+        <md-checkbox indeterminate class="m-1"></md-checkbox>
+    </md-outlined-field>
+</div>
+
+<div name="row-9" class="d-flex m-1">
+    <label class="mt-3">Username</label>
+    <md-filled-text-field type="text" class="m-2" style="height: 30px; width:200px;">
+    </md-filled-text-field>
+    <label class="mt-3">Password</label>
+    <md-filled-text-field type="password" class="m-2" style="height: 30px; width:200px;">
+    </md-filled-text-field>
+    <md-tonal-button class="m-2 mt-3">Login</md-tonal-button>
+</div>
+
+@code {
+    private float progress = 0.1f;
+}
