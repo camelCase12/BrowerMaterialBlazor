@@ -66,6 +66,8 @@ a, .btn-link {
 
 /*Material Styles*/
 :root {
+    --md-sys-typescale-label-large: Roboto;
+
     --md-sys-color-primary: #006A6A;
     --md-sys-color-primary-container: #6FF7F6;
     --md-sys-color-on-primary: #FFFFFF;
