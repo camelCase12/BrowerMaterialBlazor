@@ -14,7 +14,7 @@ Fully implemented components are referenceable in BrowerMaterialBlazor/Client/Co
 
 ## Partially Implemented Components
 
-Partially implemented components have been compiled into bundle.js and are only directly referenceable (i.e. <md-tonal-button/>). Partially implemented components will be listed in the import table in index.js.
+Partially implemented components have been compiled into bundle.js and are only directly referenceable (i.e. \<md-tonal-button/>). Partially implemented components will be listed in the import table in index.js.
 
 ## Non-Implemented Components
 
