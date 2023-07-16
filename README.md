@@ -4,7 +4,7 @@ Experimental implementation of Material 3 in Blazor
 
 index.html contains a few example components implemented at different levels:
 
-![image](https://github.com/camelCase12/BrowerMaterialBlazor/assets/14899204/7af0a9a1-105f-4d2f-a676-a7b9b1affdf5)
+![image](https://github.com/camelCase12/BrowerMaterialBlazor/assets/14899204/4e3ea389-b8fe-4fe2-a933-996a567c8835)
 
 # Instructions
 
