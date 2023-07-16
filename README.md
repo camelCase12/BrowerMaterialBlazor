@@ -4,7 +4,7 @@ Experimental implementation of Material 3 in Blazor
 
 index.html contains a few example components implemented at different levels:
 
-![image](https://github.com/camelCase12/BrowerMaterialBlazor/assets/14899204/84af1694-1846-454d-816a-132edc35f595)
+![image](https://github.com/camelCase12/BrowerMaterialBlazor/assets/14899204/7af0a9a1-105f-4d2f-a676-a7b9b1affdf5)
 
 # Instructions
 
@@ -14,7 +14,7 @@ Fully implemented components are referenceable in BrowerMaterialBlazor/Client/Co
 
 ## Partially Implemented Components
 
-Partially implemented components have been compiled into bundle.js and are only directly referenceable (i.e. <md-tonal-button/>). Partially implemented components will be listed in the import table in index.js.
+Partially implemented components have been compiled into bundle.js and are only directly referenceable (i.e. \<md-tonal-button/>). Partially implemented components will be listed in the import table in index.js.
 
 ## Non-Implemented Components
 
